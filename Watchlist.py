@@ -17,5 +17,7 @@ def edit_movie(title: str, new_title: str = None, new_year: int = None, new_genr
     if new_genre:
         changes.append(f"Genre changed to {new_genre}")
     
-    change_summary = ", ".join(changes)
+    change_summary = ", ".join(changes) #collect changes into a summary string
     print(f"Edited movie: {title}. Changes: {change_summary}")
+
+
